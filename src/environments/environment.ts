@@ -5,9 +5,10 @@
 export const environment = {
   production: false,
   URL_BACKEND: 'http://localhost:3000/',
-  URL_SERVICIOS: 'http://localhost:3000/api/',
-  URL_FRONTED: 'http://localhost:4200',
-  mapboxToken:'pk.eyJ1IjoiZmxvd2VybW9yZW5vNyIsImEiOiJjbGdtZzk4OGcwNWdmM2pzNDFwcXczc3ZjIn0.xbphs-RZO3TUdOsl-A1Wuw'
+  // URL_SERVICIOS: 'http://localhost:3000/api',
+  URL_SERVICIOS: 'https://api-teacher-app.up.railway.app/api/public/teachers',
+  // URL_FRONTED: 'http://localhost:4200',
+  apiKey: 'pk.eyJ1Ijoia2xlcml0aCIsImEiOiJja3hramV2OWIwbjEwMzFwYzJlZWl6N2g5In0.iKXPpYvo7UPRiiZ-x_lCrw',
 };
 
 /*

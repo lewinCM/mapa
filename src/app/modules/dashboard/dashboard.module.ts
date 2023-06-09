@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { TeacherComponent } from './pages/teacher/teacher.component';
 import { StudentComponent } from './pages/student/student.component';
+import { MaterialModule } from './material/material.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { StudentComponent } from './pages/student/student.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    MaterialModule
   ]
 })
 export class DashboardModule { }

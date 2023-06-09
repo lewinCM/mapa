@@ -7,17 +7,30 @@ import { P404Component } from './shared/components/p404/p404.component';
 
 const routes: Routes = [
 
-  { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
+  {
+    path: "maps",
+    loadChildren: () => import("./modules/maps/maps.module").then(m => m.MapsModule)
+  },
+  {
+    path: "dashboard",
+    loadChildren: () => import("./modules/dashboard/dashboard.module").then(m => m.DashboardModule)
+  },
 
-  
+  {
+    path: "profesors",
+    loadChildren: () => import("./modules/teacher/teacher.module").then(m => m.TeacherModule)
+  },
   {
     path: "auth",
     loadChildren: () => import("./modules/auth/auth.module").then(m => m.AuthModule)
   },
+  {
+    path: "", redirectTo: 'home', pathMatch: 'full',
+  },
 
   {
-    path: '**', pathMatch: 'full',
+    path: '**',
     component: P404Component
   },
 

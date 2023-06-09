@@ -1,1 +1,29 @@
-<app-teacher-home></app-teacher-home>
+<section class="teacher__area pt-115 pb-110">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section__title-wrapper text-center mb-60">
+          <h2 class="section__title">Nuestros Profesores <br>
+            más <span class="yellow-bg">Populares <img src="assets/img/shape/yellow-bg-2.png" alt=""></span> <br>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let instructor of filteredUsers.slice(0, 4)" class="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
+        <div class="teacher__item text-center transition-3 mb-30">
+          <div class="teacher__thumb w-img fix">
+            <a href="#">
+              <div class="rounded-img">
+                <img src="{{instructor.image}}" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="teacher__content">
+            <h3 class="teacher__title">{{instructor.username}}</h3>
+            <p class="text-justify">{{instructor.description | slice:0:150}}</p>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

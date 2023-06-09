@@ -7,19 +7,23 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './modules/home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 // import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
+  
 
-   ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule,
+
     // SwiperModule
   ],
   providers: [],
